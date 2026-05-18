@@ -1,0 +1,16 @@
+# ide
+*.idea
+*.vscode
+
+# python
+*.pyc
+*.whl
+*.egg-info
+
+# data
+*.png
+*.json
+*.jsonl
+
+# ini
+*.ini

@@ -1,0 +1,28 @@
+# SMPLH model weights - over GitHub's 100 MB file size limit and have
+# their own redistribution licence. Download separately from
+# https://mano.is.tue.mpg.de/ after registration.
+firmware/fsglove-main/assets/mano/models/SMPLH_male.pkl
+firmware/fsglove-main/assets/mano/models/SMPLH_female.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Arduino / PlatformIO build output
+build/
+.pio/
+*.elf
+*.bin
+*.hex
+
+# Editor / OS
+.vscode/
+.idea/
+*.bak
+*.bak2
+*.bak3
+.DS_Store
+Thumbs.db
