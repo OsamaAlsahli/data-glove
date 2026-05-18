@@ -82,7 +82,7 @@ work of its original authors — see its own README and licence inside that
 folder. The SMPLH model weights (`SMPLH_male.pkl`, `SMPLH_female.pkl`)
 required by FSGlove are **not** included in this repo; they have their
 own redistribution licence and must be downloaded directly from
-<https://mano.is.tue.mpg.de/> after registration.
+(https://sites.google.com/view/fsglove/).
 
 ## Notes
 
