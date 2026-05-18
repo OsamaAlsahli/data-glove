@@ -80,9 +80,10 @@ everything under `bridge/`) is released for academic and personal use.
 `firmware/fsglove-main/` is included for reproducibility only and is the
 work of its original authors — see its own README and licence inside that
 folder. The SMPLH model weights (`SMPLH_male.pkl`, `SMPLH_female.pkl`)
-required by FSGlove are **not** included in this repo; they have their
-own redistribution licence and must be downloaded directly from
-(https://sites.google.com/view/fsglove/).
+required by FSGlove are **not** included in this repo. To obtain them and
+get FSGlove running, follow the setup instructions in the upstream FSGlove
+repository (<https://github.com/davidliyutong/fsglove>); the project page
+is at <https://sites.google.com/view/fsglove/>.
 
 ## Notes
 
