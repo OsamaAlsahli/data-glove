@@ -89,11 +89,11 @@ is at <https://sites.google.com/view/fsglove/>.
 
 ## Known limitations
 
-- **Single-multiplexer firmware.** `firmware/quat/quat.ino` was written
-  assuming one 16-channel multiplexer, but the final hardware splits the
-  16 IMUs across two TCA9548As (each with 8 channels). Reading sensors 8–15
-  therefore needs a second multiplexer-select layer that this build does
-  not yet implement; the limitation is flagged inline with a `NOTE:` comment.
-  The single-finger and 8-sensor paths are fully working.
+- **Single multiplexer firmware.** `firmware/quat/quat.ino` was written
+  assuming one 16 channel multiplexer, but the final hardware splits the
+  16 IMUs across two TCA9548As (each with 8 channels). Reading sensors 8 to 15
+  therefore needs a second multiplexer select layer that this build does
+  not yet implement. The limitation is flagged inline with a `NOTE:` comment.
+  The single finger and 8 sensor paths are fully working.
 - `bridge/bridge_finger.py` is an unfinished early version of the bridge,
   kept for historical reference. The working bridge is `bridge/bridge.py`.
