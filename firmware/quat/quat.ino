@@ -101,7 +101,7 @@ void read_all_imu(){
   Serial.print("|");
   read_imu_quat(14, 14);
   Serial.print("|");
-  read_imu_quat(15, 5);   // NOTE: passes mux channel 5 for sensor 15 - kept as written; verify channel before deploying.
+  read_imu_quat(15, 15);  // NOTE: sensors 8-15 need a second TCA9548A select layer (see file header) - not yet implemented.
 }
 
 void setup(void){

@@ -6,6 +6,8 @@ fingertip force sensing.
 Final Year Project — **Osama Alsahli**, BEng Electronic Engineering, University
 of York, 2026.
 
+<img src="images/PXL_20260508_142707911.jpg" width="480" alt="Data glove prototype with fingertip STOF sensor and IMU wiring">
+
 ## What this is
 
 A wearable glove that captures finger and hand orientation using sixteen
@@ -85,10 +87,13 @@ get FSGlove running, follow the setup instructions in the upstream FSGlove
 repository (<https://github.com/davidliyutong/fsglove>); the project page
 is at <https://sites.google.com/view/fsglove/>.
 
-## Notes
+## Known limitations
 
-- `firmware/quat/quat.ino` has a known issue on line 77 where sensor 15
-  is read through multiplexer channel 5 instead of channel 15. Flagged in
-  the source with a `NOTE:` comment; verify the channel before deploying.
+- **Single-multiplexer firmware.** `firmware/quat/quat.ino` was written
+  assuming one 16-channel multiplexer, but the final hardware splits the
+  16 IMUs across two TCA9548As (each with 8 channels). Reading sensors 8–15
+  therefore needs a second multiplexer-select layer that this build does
+  not yet implement; the limitation is flagged inline with a `NOTE:` comment.
+  The single-finger and 8-sensor paths are fully working.
 - `bridge/bridge_finger.py` is an unfinished early version of the bridge,
   kept for historical reference. The working bridge is `bridge/bridge.py`.
